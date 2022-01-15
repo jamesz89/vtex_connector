@@ -1,6 +1,6 @@
-import Downloader from "./downloader";
-import config from "./config";
-import productMapper from './mapper';
+import Downloader from "../src/downloader.js";
+import config from "../src/config.js";
+import productMapper from '../src/mapper.js';
 
 const productDownloader = new Downloader(config)
 
