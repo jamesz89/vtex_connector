@@ -1,0 +1,8 @@
+const config = {
+  accountName: "storebbb",
+  appKey: "vtexappkey-storebbb-KBQGQJ",
+  appToken:
+    "PFUUNGVQUUTPVLQEHOPCAKWSMCVOHNMOAFHLZEUNPEECJYMZOCYOHNTFJCHLLGJGHEOPEFECTCMVFTIOPVAEPYGNMBCWXJCJVYVFKXVIXVUFAYZPTTVPFFRJYADCCIFK",
+};
+
+module.exports = config
