@@ -1,11 +1,15 @@
 const Downloader = require("./downloader");
 const config = require("./config");
+const productMapper = require('./mapper')
 
 const productDownloader = new Downloader(config)
 
 const start = async () => {
-  const products = await productDownloader.retrieveAllProducts()
-  console.log(products[0])
+  const downloadedProducts = await productDownloader.retrieveAllProducts()
+  const mappedProducts = productMapper(downloadedProducts)
+  console.log(mappedProducts[0])
+  //Upload products here...
+  
 }
 
 start()

@@ -45,7 +45,7 @@ class Downloader {
       //Push each product into an array
       for (let k in items) {
         let item = items[k];
-        console.log("downloading...",k ,item.productName);
+        console.log("downloading...", item.productName);
         output.push(item);
       }
       start = start + 50;
