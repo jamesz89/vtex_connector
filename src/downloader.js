@@ -55,4 +55,4 @@ class Downloader {
   };
 }
 
-module.exports = Downloader
+export default Downloader

@@ -9,6 +9,8 @@
   "author": "James",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.24.0"
-  }
+    "axios": "^0.24.0",
+    "firebase": "^9.6.3"
+  },
+  "type": "module"
 }

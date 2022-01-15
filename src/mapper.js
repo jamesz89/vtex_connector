@@ -17,4 +17,4 @@ const mapper = (data) => {
   return output
 };
 
-module.exports = mapper
+export default mapper
