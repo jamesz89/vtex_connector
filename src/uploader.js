@@ -1,8 +1,8 @@
 import db from "../db/firestore.js";
 
 const uploader = async (data) => {
-  const docRef = db.collection("products").doc();
   for (let i = 0; i < data.length; i++) {
+    let docRef = db.collection("products").doc();
     await docRef.set({
       brand: data[i].brand,
       categoryId: data[i].categoryId,
@@ -16,4 +16,4 @@ const uploader = async (data) => {
   }
 };
 
-export default uploader
+export default uploader;
