@@ -1,4 +1,4 @@
-import config from "./config.js";
+import config from "../config.js";
 
 const reformatUrl = (url) => {
   return url.replace(

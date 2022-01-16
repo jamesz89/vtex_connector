@@ -1,7 +1,7 @@
-import Downloader from "../src/downloader.js";
+import Downloader from "./stages/downloader.js";
 import config from "../src/config.js";
-import productMapper from '../src/mapper.js';
-import uploader from "./uploader.js";
+import productMapper from './stages/mapper.js';
+import uploader from "./stages/uploader.js";
 
 const productDownloader = new Downloader(config)
 

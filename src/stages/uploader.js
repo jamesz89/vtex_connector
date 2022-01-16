@@ -1,4 +1,4 @@
-import db from "../db/firestore.js";
+import db from "../../db/firestore.js";
 
 const uploader = async (data) => {
   for (let i = 0; i < data.length; i++) {
