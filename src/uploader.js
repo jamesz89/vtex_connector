@@ -13,6 +13,7 @@ const uploader = async (data) => {
       sku: data[i].sku,
       url: data[i].url,
     });
+    console.log("uploading", i, data[i].name);
   }
 };
 

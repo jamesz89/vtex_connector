@@ -1,3 +1,12 @@
+import config from "./config.js";
+
+const reformatUrl = (url) => {
+  return url.replace(
+    "https://storebbb.vtexcommercestable.com.br",
+    config.baseUrl
+  );
+};
+
 const mapper = (data) => {
   const output = [];
 
@@ -10,11 +19,11 @@ const mapper = (data) => {
       offerPrice: data[i].items[0].sellers[0].commertialOffer.Price,
       price: data[i].items[0].sellers[0].commertialOffer.ListPrice,
       sku: data[i].productId,
-      url: data[i].link,
+      url: reformatUrl(data[i].link),
     });
     console.log("mapping...", i, data[i].productName);
   }
-  return output
+  return output;
 };
 
-export default mapper
+export default mapper;
