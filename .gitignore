@@ -1,3 +1,4 @@
 node_modules
+.env
 db/serviceAccount.json
 db/offers-recommender-firebase-adminsdk-wyezs-5d937f7db4.json:Zone.Identifier

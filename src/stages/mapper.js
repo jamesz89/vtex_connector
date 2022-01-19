@@ -1,9 +1,7 @@
-import config from "../config.js";
-
 const reformatUrl = (url) => {
   return url.replace(
     "https://storebbb.vtexcommercestable.com.br",
-    config.baseUrl
+    process.env.BASE_URL
   );
 };
 
